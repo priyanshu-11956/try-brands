@@ -2,3 +2,4 @@
 .next
 process.env
 .bin
+.gitattributes
