@@ -3,28 +3,13 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useState } from "react";
-import { toast } from "sonner";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { 
-  Rocket, 
-  TrendingUp, 
-  Target, 
-  Users, 
-  BarChart, 
-  Send 
-} from "lucide-react";
-import { HeroIllustration } from "@/components/illustrations/hero-illustration";
+import { Users, BarChart, Send} from "lucide-react";
 import { ServiceCards } from "@/components/illustrations/service-cards";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Stats } from "@/components/sections/stats";
 import { Process } from "@/components/sections/process";
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
   const [heroRef, heroInView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -59,30 +44,6 @@ export default function Home() {
     triggerOnce: true,
     threshold: 0.1,
   });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, message }),
-      });
-
-      if (response.ok) {
-        toast.success("Message sent successfully!");
-        setEmail("");
-        setMessage("");
-      } else {
-        toast.error("Failed to send message. Please try again.");
-      }
-    } catch (error) {
-      toast.error("An error occurred. Please try again later.");
-    }
-  };
-
   return (
     <main className="min-h-screen bg-gradient-to-b from-background to-muted">
       <motion.section
@@ -124,7 +85,6 @@ export default function Home() {
             animate={heroInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.8 }}
           >
-            <HeroIllustration />
           </motion.div>
         </div>
       </motion.section>
@@ -242,29 +202,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">
             Let's Make Your Brand Unforgettable!
           </h2>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <Input
-                type="email"
-                placeholder="Your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-            <div>
-              <Textarea
-                placeholder="Your message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                required
-                className="min-h-[150px]"
-              />
-            </div>
-            <Button type="submit" className="w-full" size="lg">
-              <Send className="mr-2 h-4 w-4" /> Send Message
-            </Button>
-          </form>
+          
         </div>
       </motion.section>
     </main>
