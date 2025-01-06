@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Send, Instagram, Facebook, Youtube, MapPin } from "lucide-react";
+import {Mail, Phone, Send, Instagram, Facebook, Youtube, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -71,8 +71,16 @@ export function ContactSection({ inView }: { inView: boolean }) {
           </Button>
         </div>
         <div className="flex items-center space-x-2 text-muted-foreground">
-          <MapPin className="h-5 w-5" />
-          <span>11E/106A,  Sector 11D, Pocket E, Sector 11, Faridabad, Haryana, 121006</span>
+          <MapPin className="h-6 w-6" />
+          <span>11E, Sector 11D, Pocket E, Sector 11, Faridabad, Haryana, 121006</span>
+        </div>
+        <div className="flex items-center space-x-2 text-muted-foreground">
+          <Phone className="h-6 w-6" />
+          <span>+92 8922891667</span>
+        </div>
+        <div className="flex items-center space-x-2 text-muted-foreground">
+          <Mail className="h-6 w-6" />
+          <span>XYZ@dash.com</span>
         </div>
       </motion.div>
 
