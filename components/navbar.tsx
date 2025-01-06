@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Logo } from "./logo";
 
 export function Navbar() {
   const { setTheme } = useTheme();
@@ -23,16 +24,11 @@ export function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 justify-between">
         <div className="flex h-16 items-center justify-between">
-          <motion.div 
-            className="text-2xl font-bold"
-            whileHover={{ scale: 1.05 }}
-          >
-            MarketingEdge
-          </motion.div>
+          <Logo />
 
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 lg:translate-x-56">
             <motion.a 
               whileHover={{ scale: 1.1 }}
               href="#services"
@@ -71,9 +67,6 @@ export function Navbar() {
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setTheme("dark")}>
                   Dark
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setTheme("system")}>
-                  System
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

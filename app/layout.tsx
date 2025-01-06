@@ -8,8 +8,8 @@ import { Toaster } from '@/components/ui/sonner';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'MarketingEdge - Your Brand, In Every Hand',
-  description: 'Building Brands That Trend and Last',
+  title: 'PRE-branding - Marketing That Moves, Campaigns That Stick',
+  description: 'Your Growth, Our Mission - Building influence and authority in your niche',
 };
 
 export default function RootLayout({
