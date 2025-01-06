@@ -6,17 +6,17 @@ import Image from "next/image";
 
 const methods = [
   {
-    icon: <Droplets className="h-8 w-8" />,
+    icon: <Droplets className="h-10 w-10 font-extrabold" />,
     title: "Branded Water Bottles",
     description: "Amplify visibility through unique branded merchandise that keeps your brand in hand.",
   },
   {
-    icon: <Lightbulb className="h-8 w-8" />,
+    icon: <Lightbulb className="h-10 w-10 font-extrabold" />,
     title: "Creative Campaigns",
     description: "On-the-ground campaigns that create real connections with your audience.",
   },
   {
-    icon: <Users className="h-8 w-8" />,
+    icon: <Users className="h-10 w-10" />,
     title: "Community Engagement",
     description: "Building lasting relationships through meaningful interactions.",
   },
@@ -25,9 +25,16 @@ const methods = [
 export function MethodsSection({ inView }: { inView: boolean }) {
   return (
     <div className="max-w-6xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">
+      <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={inView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="relative h-[400px] md:h-[600px]"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">
         Unique Methods
       </h2>
+        </motion.div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -43,7 +50,7 @@ export function MethodsSection({ inView }: { inView: boolean }) {
           />
         </motion.div>
 
-        <div className="space-y-8">
+        <div className="space-y-12">
           {methods.map((method, index) => (
             <motion.div
               key={index}
