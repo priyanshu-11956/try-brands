@@ -3,8 +3,17 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export function HeroSection({ inView }: { inView: boolean }) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null; // Prevent rendering on the server
+
   return (
     <div className="max-w-7xl mx-auto w-full relative">
       {/* Background decorative elements */}
@@ -26,29 +35,30 @@ export function HeroSection({ inView }: { inView: boolean }) {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
-              className="text-lg md:text-xl text-primary font-semibold mb-4"
+              className="md:text-7xl mt-10 sm:font-bold text-primary font-bold mb-8"
             >
-              Welcome to PRE-Branding
+              Welcome to Try-Brands
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.4 }}
-              className="text-4xl sm:text-5xl md:text-6xl xl:text-xl font-bold leading-tight"
+              className="text-4xl sm:text-4xl md:text-6xl xl:text-3xl font-bold leading-tight md:mt-10"
             >
               <span className="gradient-text">Marketing That Moves,</span>
               <br />
               <span className="gradient-text">Campaigns That Stick</span>
             </motion.h1>
           </div>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.6 }}
-            className="text-xl md:text-2xl text-muted-foreground max-w-xl mx-auto lg:mx-0"
+            className="text-xl md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-4"
           >
-            <div>Your Growth, Our Mission.</div><div>Building influence and authority in your niche.</div>
+            <div>Your Growth, Our Mission.</div>
+            <div>Building influence and authority in your niche.</div>
           </motion.p>
 
           <motion.div

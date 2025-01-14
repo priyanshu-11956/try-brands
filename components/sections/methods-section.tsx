@@ -13,7 +13,7 @@ const methods = [
   {
     icon: <Lightbulb className="h-10 w-10 font-extrabold" />,
     title: "Creative Campaigns",
-    description: "On-the-ground campaigns that create real connections with your audience.",
+    description: "On-the-ground campaigns that create real connections with your audience for better branding.",
   },
   {
     icon: <Users className="h-10 w-10" />,
@@ -26,21 +26,22 @@ export function MethodsSection({ inView }: { inView: boolean }) {
   return (
     <div className="max-w-6xl mx-auto">
       <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={inView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="relative h-[400px] md:h-[600px]"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">
-        Unique Methods
-      </h2>
-        </motion.div>
+        initial={{ opacity: 0, x: -20 }}
+        animate={inView ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 0.6 }}
+        className="relative h-[400px] md:h-[150px]"
+      >
+
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 gradient-text">
+          Unique Methods
+        </h2>
+      </motion.div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="relative h-[400px] md:h-[600px]"
+          className="relative h-[100px] md:h-[400px]"
         >
           <Image
             src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?auto=format&fit=crop&q=80"

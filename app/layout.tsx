@@ -8,7 +8,7 @@ import { Toaster } from '@/components/ui/sonner';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'PRE-branding - Marketing That Moves, Campaigns That Stick',
+  title: 'Try-Brands - Marketing That Moves, Campaigns That Stick',
   description: 'Your Growth, Our Mission - Building influence and authority in your niche',
 };
 

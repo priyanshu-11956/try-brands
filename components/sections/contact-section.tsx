@@ -80,7 +80,7 @@ export function ContactSection({ inView }: { inView: boolean }) {
         </div>
         <div className="flex items-center space-x-2 text-muted-foreground">
           <Mail className="h-6 w-6" />
-          <span>XYZ@dash.com</span>
+          <span>try.x.care@gmail.com</span>
         </div>
       </motion.div>
 

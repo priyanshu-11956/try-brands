@@ -5,7 +5,7 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "MarketingEdge transformed our brand's online presence. Their strategies doubled our engagement in just 3 months!",
+    quote: "Try-Brands transformed our brand's online presence. Their strategies doubled our engagement in just 3 months!",
     author: "Sarah Johnson",
     role: "CEO, TechStart Inc.",
   },

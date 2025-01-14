@@ -20,7 +20,7 @@ export function Logo() {
           <Rocket className="h-6 w-6 text-primary" />
         </div>
       </div>
-      <span className="text-2xl font-bold gradient-text">PRE-Branding</span>
+      <span className="text-4xl font-bold gradient-text">Try-Brands</span>
     </motion.div>
   );
 }

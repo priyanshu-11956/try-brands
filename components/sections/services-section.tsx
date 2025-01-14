@@ -28,9 +28,17 @@ const services = [
 export function ServicesSection({ inView }: { inView: boolean }) {
   return (
     <div className="max-w-6xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">
+      <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={inView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="relative h-[400px] md:h-[150px]"
+        >
+
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 gradient-text">
         Core Services
       </h2>
+        </motion.div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <motion.div

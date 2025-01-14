@@ -19,34 +19,34 @@ export function Navbar() {
 
   return (
     <motion.nav 
-      className="fixed w-full z-50 bg-background/80 backdrop-blur-sm border-b"
-      initial={{ y: -100 }}
+      className="p-4 flex justify-between justify-items-center items-center fixed w-full z-50 bg-background/80 backdrop-blur-sm border-b"
+      initial={{ y: 90 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto px-4 justify-between">
+      <div className="container px-2 justify-between items-end">
         <div className="flex h-16 items-center justify-between">
           <Logo />
 
-          <div className="hidden md:flex space-x-8 lg:translate-x-56">
+          <div className="hidden md:flex items-end space-x-8 lg:translate-x-56 font-bold">
             <motion.a 
               whileHover={{ scale: 1.1 }}
               href="#services"
-              className="text-foreground/80 hover:text-foreground"
+              className="text-2xl hover:text-foreground"
             >
               Services
             </motion.a>
             <motion.a 
               whileHover={{ scale: 1.1 }}
               href="#about"
-              className="text-foreground/80 hover:text-foreground"
+              className="text-2xl hover:text-foreground"
             >
               About
             </motion.a>
             <motion.a 
               whileHover={{ scale: 1.1 }}
               href="#contact"
-              className="text-foreground/80 hover:text-foreground"
+              className="text-2xl hover:text-foreground"
             >
               Contact
             </motion.a>
