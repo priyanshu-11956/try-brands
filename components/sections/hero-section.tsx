@@ -34,7 +34,7 @@ export function HeroSection({ inView }: { inView: boolean }) {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.4 }}
-              className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl xl:text-xl font-bold leading-tight"
             >
               <span className="gradient-text">Marketing That Moves,</span>
               <br />
@@ -48,7 +48,7 @@ export function HeroSection({ inView }: { inView: boolean }) {
             transition={{ delay: 0.6 }}
             className="text-xl md:text-2xl text-muted-foreground max-w-xl mx-auto lg:mx-0"
           >
-            Your Growth, Our Mission. Building influence and authority in your niche.
+            <div>Your Growth, Our Mission.</div><div>Building influence and authority in your niche.</div>
           </motion.p>
 
           <motion.div
