@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {Mail, Phone, Send, Instagram, Facebook, Youtube, MapPin } from "lucide-react";
+import {Mail, Phone, Send, Instagram, Facebook, Youtube, MapPin, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -67,6 +67,11 @@ export function ContactSection({ inView }: { inView: boolean }) {
           <Button variant="outline" size="icon" asChild>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
               <Youtube className="h-5 w-5" />
+            </a>
+          </Button>
+          <Button variant="outline" size="icon" asChild>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="h-5 w-5" />
             </a>
           </Button>
         </div>
