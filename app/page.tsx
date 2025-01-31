@@ -6,7 +6,7 @@ import { ServicesSection } from "@/components/sections/services-section";
 import { MethodsSection } from "@/components/sections/methods-section";
 import { ResultsSection } from "@/components/sections/results-section";
 import { WhyUsSection } from "@/components/sections/why-us-section";
-import { CarouselSection } from "@/components/Carousalsection";
+import { CarouselSection } from "@/components/CarousalSection";
 import { ContactSection } from "@/components/sections/contact-section";
 
 export default function Home() {
@@ -52,8 +52,8 @@ export default function Home() {
           <ContactSection inView={contactInView} />
         </div>
       </section>
-      <div className="flex items-center justify-center bg-slate-100 text-slate-950 h-20">
-  Copyright © Proffus Pvt Ltd | All Rights Reserved.
+      <div className="flex items-center justify-center bg-slate-600 text-slate-950 h-10">
+  Copyright © Try-X Pvt Ltd | All Rights Reserved.
 </div>
     </main>
   );
