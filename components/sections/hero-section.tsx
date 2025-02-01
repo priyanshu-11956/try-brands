@@ -45,7 +45,7 @@ export function HeroSection({ inView }: { inView: boolean }) {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 1.0 }}
-          className="gradient-text md:text-7xl text-3xl font-medium mb-3"
+          className="gradient-text md:text-xl text-3xl font-medium mb-3"
         >
           To
         </motion.p>
