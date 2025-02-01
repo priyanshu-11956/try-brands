@@ -23,7 +23,7 @@ export function HeroSection({ inView }: { inView: boolean }) {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="https://drive.google.com/file/d/1bpf8dG1Fh2qfseAHufW8TZh2BjYootJO/view?usp=drive_link" type="video/mp4" />
+        <source src="/bgvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
