@@ -3,3 +3,4 @@
 process.env
 .bin
 .gitattributes
+.DS_Store
