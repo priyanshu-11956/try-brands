@@ -16,11 +16,11 @@ export function Logo() {
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-secondary to-accent opacity-25 blur-lg"
         />
-        <div className="relative bg-background rounded-full p-2">
-          <Rocket className="h-6 w-6 text-primary" />
+        <div className="relative bg-background rounded-full">
+          <img src="https://res.cloudinary.com/dp61nsozp/image/upload/v1738431440/TRY--NOVATE_2_par3nu.png" alt="Logo" className="w-16 h-16 rounded-full" />
         </div>
       </div>
-      <span className="sm:text-4xl font-bold gradient-text">Try-Brands</span>
+      <span className="sm: text-2xl font-bold ">Try-Brands</span>
     </motion.div>
   );
 }

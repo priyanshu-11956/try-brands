@@ -37,7 +37,7 @@ export function HeroSection({ inView }: { inView: boolean }) {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2 }}
-          className="gradient-text md:text-7xl text-5xl font-extrabold mb-3"
+          className="md:text-7xl text-5xl font-extrabold mb-3"
         >
           Welcome
         </motion.p>
@@ -45,7 +45,7 @@ export function HeroSection({ inView }: { inView: boolean }) {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 1.0 }}
-          className="gradient-text md:text-xl text-3xl font-medium mb-3"
+          className="md:text-xl text-3xl font-medium mb-3"
         >
           To
         </motion.p>
@@ -64,9 +64,9 @@ export function HeroSection({ inView }: { inView: boolean }) {
           className="text-xl  font-extrabold leading-tight mb-14"
         >
         </motion.h1>
-        <span className="gradient-text md:font-extrabold md:text-5xl">Marketing That Moves,</span>
+        <span className="gradient-text md:font-extrabold md:text-xl">Marketing That Moves,</span>
         <br />
-        <span className="gradient-text md:font-extrabold md:text-5xl">Campaigns That Stick</span>
+        <span className="gradient-text md:font-extrabold md:text-xl">Campaigns That Stick</span>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
