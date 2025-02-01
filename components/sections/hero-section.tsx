@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
@@ -23,9 +23,10 @@ export function HeroSection({ inView }: { inView: boolean }) {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/BgVideo.mp4" type="video/mp4" />
-
+        <source src="/bgvideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
+
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50" />
@@ -63,9 +64,9 @@ export function HeroSection({ inView }: { inView: boolean }) {
           className="text-xl  font-extrabold leading-tight mb-14"
         >
         </motion.h1>
-          <span className="gradient-text md:font-extrabold md:text-5xl">Marketing That Moves,</span>
-          <br />
-          <span className="gradient-text md:font-extrabold md:text-5xl">Campaigns That Stick</span>
+        <span className="gradient-text md:font-extrabold md:text-5xl">Marketing That Moves,</span>
+        <br />
+        <span className="gradient-text md:font-extrabold md:text-5xl">Campaigns That Stick</span>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
