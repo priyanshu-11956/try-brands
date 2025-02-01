@@ -25,7 +25,7 @@ export function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <div className="container px-2 justify-between items-end">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-12 items-center justify-between">
           <Logo />
 
           <div className="hidden md:flex items-end space-x-8 lg:translate-x-56 font-bold">

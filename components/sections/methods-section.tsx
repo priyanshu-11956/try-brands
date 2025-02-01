@@ -29,10 +29,10 @@ export function MethodsSection({ inView }: { inView: boolean }) {
         initial={{ opacity: 0, x: -20 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.6 }}
-        className="relative h-[400px] md:h-[150px]"
+        className="relative h-[100px] md:h-[150px]"
       >
 
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 gradient-text">
+        <h2 className="text-3xl md:text-4xl font-bold text-center gradient-text">
           Unique Methods
         </h2>
       </motion.div>
@@ -41,7 +41,7 @@ export function MethodsSection({ inView }: { inView: boolean }) {
           initial={{ opacity: 0, x: -20 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="relative h-[100px] md:h-[400px]"
+          className="relative h-[300px] md:h-[400px]"
         >
           <Image
             src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?auto=format&fit=crop&q=80"

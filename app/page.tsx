@@ -18,33 +18,34 @@ export default function Home() {
   const [contactRef, contactInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
+
     <main className="min-h-screen bg-gradient-to-b from-background to-muted">
-      <section ref={heroRef} className="min-h-screen flex items-center justify-center px-4 pt-16">
+      <section ref={heroRef} className="min-h-screen flex items-center justify-center pt-16">
         <HeroSection inView={heroInView} />
       </section>
 
-      <section id="services" ref={servicesRef} className="py-20 px-4">
+      <section id="services" ref={servicesRef} className="py-20 px-2">
         <ServicesSection inView={servicesInView} />
       </section>
 
-      <section id="carousel" className="py-20 px-4 max-w-7xl mx-auto text-center">
+      <section id="carousel" className="py-10 px-2 max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">Our Work</h2>
         <CarouselSection />
       </section>
 
-      <section ref={methodsRef} className="py-20 px-4 bg-muted/50">
+      <section ref={methodsRef} className="py-10 px-2 bg-muted/50">
         <MethodsSection inView={methodsInView} />
       </section>
 
-      <section ref={resultsRef} className="py-20 px-4">
+      <section ref={resultsRef} className="py-10 px-2">
         <ResultsSection inView={resultsInView} />
       </section>
 
-      <section id="about" ref={whyUsRef} className="py-20 px-4 bg-muted/50">
+      <section id="about" ref={whyUsRef} className="py-10 px-2 bg-muted/50">
         <WhyUsSection inView={whyUsInView} />
       </section>
 
-      <section id="contact" ref={contactRef} className="py-20 px-4">
+      <section id="contact" ref={contactRef} className="py-10 px-2">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">
             Let's Make Your Brand Unforgettable!
@@ -52,9 +53,10 @@ export default function Home() {
           <ContactSection inView={contactInView} />
         </div>
       </section>
-      <div className="flex items-center justify-center bg-slate-600 text-slate-950 h-10">
-  Copyright © Try-X Pvt Ltd | All Rights Reserved.
-</div>
+      <div className="flex items-center justify-center bg-slate-200 text-slate-950 h-10 px-4 text-sm md:text-base">
+        <p className="text-center">Copyright © Try-X Pvt Ltd | All Rights Reserved.</p>
+      </div>
+
     </main>
   );
 }

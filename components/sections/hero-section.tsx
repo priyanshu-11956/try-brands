@@ -14,7 +14,7 @@ export function HeroSection({ inView }: { inView: boolean }) {
   if (!isClient) return null; // Prevent rendering on the server
 
   return (
-    <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative w-screen h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
@@ -23,7 +23,7 @@ export function HeroSection({ inView }: { inView: boolean }) {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="../Public/videos/bgvideo.mp4" type="video/mp4" />
+        <source src="/bgvideo.mp4" type="video/mp4" />
 
       </video>
 
@@ -36,15 +36,23 @@ export function HeroSection({ inView }: { inView: boolean }) {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2 }}
-          className="gradient-text md:text-7xl text-3xl font-bold mb-6"
+          className="gradient-text md:text-7xl text-5xl font-extrabold mb-3"
         >
           Welcome
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.6 }}
-          className="gradient-text md:text-5xl text-5xl font-bold mb-6"
+          transition={{ delay: 1.0 }}
+          className="gradient-text md:text-7xl text-3xl font-medium mb-3"
+        >
+          To
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 1.0 }}
+          className="gradient-text md:text-7xl text-5xl font-extrabold pb-3"
         >
           Try-Brands
         </motion.p>
@@ -52,18 +60,18 @@ export function HeroSection({ inView }: { inView: boolean }) {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.4 }}
-          className="text-xl  font-normal leading-tight"
+          className="text-xl  font-extrabold leading-tight mb-14"
         >
-          <span className="gradient-text">Marketing That Moves,</span>
-          <br />
-          <span className="gradient-text">Campaigns That Stick</span>
         </motion.h1>
+          <span className="gradient-text md:font-extrabold md:text-5xl">Marketing That Moves,</span>
+          <br />
+          <span className="gradient-text md:font-extrabold md:text-5xl">Campaigns That Stick</span>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.6 }}
-          className="text-lg md:text-xl text-gray-300 mt-4"
+          className="text-lg md:text-xl text-gray-300 mt-4 md:mt-5"
         >
           Your Growth, Our Mission. Building influence and authority in your niche.
         </motion.p>
@@ -72,12 +80,12 @@ export function HeroSection({ inView }: { inView: boolean }) {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.8 }}
-          className="mt-6 flex flex-col sm:flex-row gap-4 justify-center"
+          className="mt-8 flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <Button size="lg" className="text-lg px-8 h-14">
+          <Button size="lg" className="text-lg px-8 h-14 m-2">
             Start Your Growth Journey
           </Button>
-          <Button size="lg" variant="outline" className="text-lg px-8 h-14">
+          <Button size="lg" variant="outline" className="text-lg px-8 h-14 m-2">
             Explore Our Services
           </Button>
         </motion.div>

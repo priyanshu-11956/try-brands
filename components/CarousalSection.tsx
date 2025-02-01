@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const images = [
-  "/images/work1.jpg",
-  "/images/work2.jpg",
-  "/images/work3.jpg",
+  "/work1.png",
+  "/work2.jpg",
+  "/work3.jpeg",
 ];
 
 export function CarouselSection() {

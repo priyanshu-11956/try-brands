@@ -55,7 +55,7 @@ export function ContactSection({ inView }: { inView: boolean }) {
         </div>
         <div className="flex space-x-4">
           <Button variant="outline" size="icon" asChild>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/try_brands/" target="_blank" rel="noopener noreferrer">
               <Instagram className="h-5 w-5" />
             </a>
           </Button>
