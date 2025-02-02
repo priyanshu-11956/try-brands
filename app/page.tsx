@@ -8,6 +8,7 @@ import { ResultsSection } from "@/components/sections/results-section";
 import { WhyUsSection } from "@/components/sections/why-us-section";
 import { CarouselSection } from "@/components/CarousalSection";
 import { ContactSection } from "@/components/sections/contact-section";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -56,7 +57,7 @@ export default function Home() {
       <div className="flex items-center justify-center bg-slate-200 text-slate-950 h-10 px-4 text-sm md:text-base">
         <p className="text-center">Copyright © Try-X Pvt Ltd | All Rights Reserved.</p>
       </div>
-
+      <Analytics/>
     </main>
   );
 }
