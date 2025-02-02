@@ -44,7 +44,7 @@ export function HeroSection({ inView }: { inView: boolean }) {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 1.0 }}
+          transition={{ delay: 0.2 }}
           className="md:text-xl text-3xl font-medium mb-3"
         >
           To

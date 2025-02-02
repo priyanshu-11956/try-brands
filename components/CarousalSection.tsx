@@ -30,7 +30,7 @@ export function CarouselSection() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -50 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          transition={{ duration: 6.5, ease: "easeInOut" }}
           className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] xl:h-[550px] relative"
         >
           {images[current].endsWith(".mp4") ? (
