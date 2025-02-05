@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const images = [
-  "https://res.cloudinary.com/dp61nsozp/video/upload/v1738502945/Our_work_slide_1_lm2flq.mp4", // Video
-  "/work2.jpg", // Image
-  "/work3.jpeg", // Image
+  "https://res.cloudinary.com/dp61nsozp/video/upload/v1738741140/Trendy_Campaigns_ncqugj.mp4", // Video
+  "https://res.cloudinary.com/dp61nsozp/video/upload/v1738740369/FINAL_WEBSITE_DESIGN_pzetw3.mp4", // Image
+  "https://res.cloudinary.com/dp61nsozp/video/upload/v1738740337/Social_Media_Marketing_addjek.mp4", // Image
 ];
 
 export function CarouselSection() {
