@@ -9,6 +9,7 @@ import { WhyUsSection } from "@/components/sections/why-us-section";
 import { CarouselSection } from "@/components/CarousalSection";
 import { ContactSection } from "@/components/sections/contact-section";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -59,6 +60,7 @@ export default function Home() {
         <p className="text-center">Copyright © Try-X Pvt Ltd | All Rights Reserved.</p>
       </div>
       <Analytics/>
+      <SpeedInsights/>
     </main>
   );
 }
