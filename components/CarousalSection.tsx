@@ -16,7 +16,7 @@ export function CarouselSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 7500);
+    }, 8000);
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);

@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Model() {
-  const { scene } = useGLTF("../Public/Animation.glb"); // Replace with your GLB file path
+  const { scene } = useGLTF("/Animation.glb"); // Replace with your GLB file path
   const modelRef = useRef<any>(null);
 
   useEffect(() => {

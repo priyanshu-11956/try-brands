@@ -17,6 +17,7 @@ export default function Home() {
   const [resultsRef, resultsInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [whyUsRef, whyUsInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [contactRef, contactInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  
 
   return (
 
